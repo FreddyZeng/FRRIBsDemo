@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C272E0AF20884432006C579C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272E0AE20884432006C579C /* AppDelegate.swift */; };
+		C272E0B120884432006C579C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272E0B020884432006C579C /* ViewController.swift */; };
+		C272E0B420884432006C579C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C272E0B220884432006C579C /* Main.storyboard */; };
+		C272E0B620884432006C579C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C272E0B520884432006C579C /* Assets.xcassets */; };
+		C272E0B920884432006C579C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C272E0B720884432006C579C /* LaunchScreen.storyboard */; };
+		C272E0C420884432006C579C /* ICXOximeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272E0C320884432006C579C /* ICXOximeterTests.swift */; };
+		C272E0CF20884432006C579C /* ICXOximeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272E0CE20884432006C579C /* ICXOximeterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C272E0C020884432006C579C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C272E0A320884432006C579C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C272E0AA20884432006C579C;
+			remoteInfo = ICXOximeter;
+		};
+		C272E0CB20884432006C579C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C272E0A320884432006C579C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C272E0AA20884432006C579C;
+			remoteInfo = ICXOximeter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C272E0AB20884432006C579C /* ICXOximeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICXOximeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C272E0AE20884432006C579C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C272E0B020884432006C579C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C272E0B320884432006C579C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C272E0B520884432006C579C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C272E0B820884432006C579C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C272E0BA20884432006C579C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C272E0BF20884432006C579C /* ICXOximeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICXOximeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C272E0C320884432006C579C /* ICXOximeterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICXOximeterTests.swift; sourceTree = "<group>"; };
+		C272E0C520884432006C579C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C272E0CA20884432006C579C /* ICXOximeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICXOximeterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C272E0CE20884432006C579C /* ICXOximeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICXOximeterUITests.swift; sourceTree = "<group>"; };
+		C272E0D020884432006C579C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C272E0A820884432006C579C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C272E0BC20884432006C579C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C272E0C720884432006C579C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C272E0A220884432006C579C = {
+			isa = PBXGroup;
+			children = (
+				C272E0AD20884432006C579C /* ICXOximeter */,
+				C272E0C220884432006C579C /* ICXOximeterTests */,
+				C272E0CD20884432006C579C /* ICXOximeterUITests */,
+				C272E0AC20884432006C579C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C272E0AC20884432006C579C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C272E0AB20884432006C579C /* ICXOximeter.app */,
+				C272E0BF20884432006C579C /* ICXOximeterTests.xctest */,
+				C272E0CA20884432006C579C /* ICXOximeterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C272E0AD20884432006C579C /* ICXOximeter */ = {
+			isa = PBXGroup;
+			children = (
+				C272E0AE20884432006C579C /* AppDelegate.swift */,
+				C272E0B020884432006C579C /* ViewController.swift */,
+				C272E0B220884432006C579C /* Main.storyboard */,
+				C272E0B520884432006C579C /* Assets.xcassets */,
+				C272E0B720884432006C579C /* LaunchScreen.storyboard */,
+				C272E0BA20884432006C579C /* Info.plist */,
+			);
+			path = ICXOximeter;
+			sourceTree = "<group>";
+		};
+		C272E0C220884432006C579C /* ICXOximeterTests */ = {
+			isa = PBXGroup;
+			children = (
+				C272E0C320884432006C579C /* ICXOximeterTests.swift */,
+				C272E0C520884432006C579C /* Info.plist */,
+			);
+			path = ICXOximeterTests;
+			sourceTree = "<group>";
+		};
+		C272E0CD20884432006C579C /* ICXOximeterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C272E0CE20884432006C579C /* ICXOximeterUITests.swift */,
+				C272E0D020884432006C579C /* Info.plist */,
+			);
+			path = ICXOximeterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C272E0AA20884432006C579C /* ICXOximeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C272E0D320884432006C579C /* Build configuration list for PBXNativeTarget "ICXOximeter" */;
+			buildPhases = (
+				C272E0A720884432006C579C /* Sources */,
+				C272E0A820884432006C579C /* Frameworks */,
+				C272E0A920884432006C579C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ICXOximeter;
+			productName = ICXOximeter;
+			productReference = C272E0AB20884432006C579C /* ICXOximeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C272E0BE20884432006C579C /* ICXOximeterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C272E0D620884432006C579C /* Build configuration list for PBXNativeTarget "ICXOximeterTests" */;
+			buildPhases = (
+				C272E0BB20884432006C579C /* Sources */,
+				C272E0BC20884432006C579C /* Frameworks */,
+				C272E0BD20884432006C579C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C272E0C120884432006C579C /* PBXTargetDependency */,
+			);
+			name = ICXOximeterTests;
+			productName = ICXOximeterTests;
+			productReference = C272E0BF20884432006C579C /* ICXOximeterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C272E0C920884432006C579C /* ICXOximeterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C272E0D920884432006C579C /* Build configuration list for PBXNativeTarget "ICXOximeterUITests" */;
+			buildPhases = (
+				C272E0C620884432006C579C /* Sources */,
+				C272E0C720884432006C579C /* Frameworks */,
+				C272E0C820884432006C579C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C272E0CC20884432006C579C /* PBXTargetDependency */,
+			);
+			name = ICXOximeterUITests;
+			productName = ICXOximeterUITests;
+			productReference = C272E0CA20884432006C579C /* ICXOximeterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C272E0A320884432006C579C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = fanrong;
+				TargetAttributes = {
+					C272E0AA20884432006C579C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C272E0BE20884432006C579C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C272E0AA20884432006C579C;
+					};
+					C272E0C920884432006C579C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C272E0AA20884432006C579C;
+					};
+				};
+			};
+			buildConfigurationList = C272E0A620884432006C579C /* Build configuration list for PBXProject "ICXOximeter" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C272E0A220884432006C579C;
+			productRefGroup = C272E0AC20884432006C579C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C272E0AA20884432006C579C /* ICXOximeter */,
+				C272E0BE20884432006C579C /* ICXOximeterTests */,
+				C272E0C920884432006C579C /* ICXOximeterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C272E0A920884432006C579C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C272E0B920884432006C579C /* LaunchScreen.storyboard in Resources */,
+				C272E0B620884432006C579C /* Assets.xcassets in Resources */,
+				C272E0B420884432006C579C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C272E0BD20884432006C579C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C272E0C820884432006C579C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C272E0A720884432006C579C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C272E0B120884432006C579C /* ViewController.swift in Sources */,
+				C272E0AF20884432006C579C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C272E0BB20884432006C579C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C272E0C420884432006C579C /* ICXOximeterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C272E0C620884432006C579C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C272E0CF20884432006C579C /* ICXOximeterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C272E0C120884432006C579C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C272E0AA20884432006C579C /* ICXOximeter */;
+			targetProxy = C272E0C020884432006C579C /* PBXContainerItemProxy */;
+		};
+		C272E0CC20884432006C579C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C272E0AA20884432006C579C /* ICXOximeter */;
+			targetProxy = C272E0CB20884432006C579C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C272E0B220884432006C579C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C272E0B320884432006C579C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C272E0B720884432006C579C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C272E0B820884432006C579C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C272E0D120884432006C579C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C272E0D220884432006C579C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C272E0D420884432006C579C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ICXOximeter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hh.com.ICXOximeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C272E0D520884432006C579C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ICXOximeter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hh.com.ICXOximeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C272E0D720884432006C579C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ICXOximeterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hh.com.ICXOximeterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ICXOximeter.app/ICXOximeter";
+			};
+			name = Debug;
+		};
+		C272E0D820884432006C579C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ICXOximeterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hh.com.ICXOximeterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ICXOximeter.app/ICXOximeter";
+			};
+			name = Release;
+		};
+		C272E0DA20884432006C579C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ICXOximeterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hh.com.ICXOximeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ICXOximeter;
+			};
+			name = Debug;
+		};
+		C272E0DB20884432006C579C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ICXOximeterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hh.com.ICXOximeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ICXOximeter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C272E0A620884432006C579C /* Build configuration list for PBXProject "ICXOximeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C272E0D120884432006C579C /* Debug */,
+				C272E0D220884432006C579C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C272E0D320884432006C579C /* Build configuration list for PBXNativeTarget "ICXOximeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C272E0D420884432006C579C /* Debug */,
+				C272E0D520884432006C579C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C272E0D620884432006C579C /* Build configuration list for PBXNativeTarget "ICXOximeterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C272E0D720884432006C579C /* Debug */,
+				C272E0D820884432006C579C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C272E0D920884432006C579C /* Build configuration list for PBXNativeTarget "ICXOximeterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C272E0DA20884432006C579C /* Debug */,
+				C272E0DB20884432006C579C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C272E0A320884432006C579C /* Project object */;
+}
