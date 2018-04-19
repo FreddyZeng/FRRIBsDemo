@@ -22,6 +22,14 @@ final class ICXOximeterRootViewController: UIViewController, ICXOximeterRootPres
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor.blue
+    }
+}
+
+
+extension ICXOximeterRootViewController {
+    
+    func addViewController(viewController: UIViewController) {
+        view.addSubview(viewController.view)
     }
 }

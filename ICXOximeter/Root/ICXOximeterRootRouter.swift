@@ -15,13 +15,27 @@ protocol ICXOximeterRootInteractable: Interactable {
 
 protocol ICXOximeterRootViewControllable: ViewControllable {
     // TODO: Declare methods the router invokes to manipulate the view hierarchy.
+    func addViewController(viewController: UIViewController)
 }
 
 final class ICXOximeterRootRouter: LaunchRouter<ICXOximeterRootInteractable, ICXOximeterRootViewControllable>, ICXOximeterRootRouting {
-
+    
     // TODO: Constructor inject child builder protocols to allow building children.
     override init(interactor: ICXOximeterRootInteractable, viewController: ICXOximeterRootViewControllable) {
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }
+    
+    override func didLoad() {
+        super.didLoad()
+        let tabbar = ICXOximeterTabbarBuilder.init(dependency: ICXOximeterTabbarComponent())
+        let router:ViewableRouting = tabbar.build(withListener: self)
+        attachChild(router)
+        
+        viewController.addViewController(viewController: router.viewControllable.uiviewController)
+    }
+}
+
+extension ICXOximeterRootRouter: ICXOximeterTabbarListener {
+    
 }
