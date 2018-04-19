@@ -13,9 +13,12 @@ protocol TabbarFirstDependency: Dependency {
     // created by this RIB.
 }
 
-final class TabbarFirstComponent: Component<TabbarFirstDependency> {
+final class TabbarFirstComponent: Component<EmptyComponent>, TabbarFirstDependency {
 
     // TODO: Declare 'fileprivate' dependencies that are only used by this RIB.
+    init() {
+        super.init(dependency: EmptyComponent())
+    }
 }
 
 // MARK: - Builder
@@ -31,7 +34,7 @@ final class TabbarFirstBuilder: Builder<TabbarFirstDependency>, TabbarFirstBuild
     }
 
     func build(withListener listener: TabbarFirstListener) -> TabbarFirstRouting {
-        let component = TabbarFirstComponent(dependency: dependency)
+//        let component = TabbarFirstComponent(dependency: dependency)
         let viewController = TabbarFirstViewController()
         let interactor = TabbarFirstInteractor(presenter: viewController)
         interactor.listener = listener

@@ -16,7 +16,14 @@ protocol ICXOximeterTabbarPresentableListener: class {
     // interactor class.
 }
 
-final class ICXOximeterTabbarViewController: UITabBarController, ICXOximeterTabbarPresentable, ICXOximeterTabbarViewControllable {
 
+final class ICXOximeterTabbarViewController: UITabBarController, ICXOximeterTabbarPresentable, ICXOximeterTabbarViewControllable {
     weak var listener: ICXOximeterTabbarPresentableListener?
+}
+
+// MARK: ICXOximeterTabbarViewControllable
+extension ICXOximeterTabbarViewController {
+    func addTabbarViewControllers(viewControllers: [UIViewController]) {
+        self.viewControllers = viewControllers;
+    }
 }

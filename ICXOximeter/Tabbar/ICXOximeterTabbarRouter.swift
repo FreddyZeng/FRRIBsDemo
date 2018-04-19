@@ -15,6 +15,7 @@ protocol ICXOximeterTabbarInteractable: Interactable {
 
 protocol ICXOximeterTabbarViewControllable: ViewControllable {
     // TODO: Declare methods the router invokes to manipulate the view hierarchy.
+    func addTabbarViewControllers(viewControllers: [UIViewController])
 }
 
 final class ICXOximeterTabbarRouter: ViewableRouter<ICXOximeterTabbarInteractable, ICXOximeterTabbarViewControllable>, ICXOximeterTabbarRouting {
@@ -24,4 +25,26 @@ final class ICXOximeterTabbarRouter: ViewableRouter<ICXOximeterTabbarInteractabl
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }
+    
+    override func didLoad() {
+        super.didLoad()
+        let firstBuilder = TabbarFirstBuilder(dependency: TabbarFirstComponent())
+        let secondBuilder = TabbarSecondBuilder(dependency: TabbarSecondComponent())
+        let firstRouting = firstBuilder.build(withListener: self)
+        let secondRouting = secondBuilder.build(withListener: self)
+        attachChild(firstRouting)
+        attachChild(secondRouting)
+        
+        viewController.addTabbarViewControllers(viewControllers: [firstRouting.viewControllable.uiviewController,secondRouting.viewControllable.uiviewController])
+    }
+}
+
+// MARK: TabbarFirstListener
+extension ICXOximeterTabbarRouter: TabbarFirstListener {
+    
+}
+
+// MARK: TabbarSecondListener
+extension ICXOximeterTabbarRouter: TabbarSecondListener {
+    
 }

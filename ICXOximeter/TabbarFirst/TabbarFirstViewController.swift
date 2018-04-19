@@ -19,4 +19,9 @@ protocol TabbarFirstPresentableListener: class {
 final class TabbarFirstViewController: UIViewController, TabbarFirstPresentable, TabbarFirstViewControllable {
 
     weak var listener: TabbarFirstPresentableListener?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = UIColor.gray
+    }
 }
