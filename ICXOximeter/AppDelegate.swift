@@ -7,15 +7,20 @@
 //
 
 import UIKit
+import RIBs
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, ICXOximeterRootListener {
 
-    var window: UIWindow?
-
+    let window = UIWindow.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+    var rootRouting: LaunchRouting?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let root = ICXOximeterRootBuilder(dependency: ICXOximeterRootComponent())
+        rootRouting = root.build(withListener: self)
+        rootRouting?.launchFromWindow(window)
         return true
     }
 
