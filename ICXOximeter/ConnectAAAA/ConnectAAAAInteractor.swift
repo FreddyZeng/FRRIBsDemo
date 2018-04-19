@@ -1,5 +1,5 @@
 //
-//  TabbarFirstInteractor.swift
+//  ConnectAAAAInteractor.swift
 //  ICXOximeter
 //
 //  Created by fanrong on 2018/4/19.
@@ -9,28 +9,27 @@
 import RIBs
 import RxSwift
 
-protocol TabbarFirstRouting: ViewableRouting {
+protocol ConnectAAAARouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
-    func routingContect()
 }
 
-protocol TabbarFirstPresentable: Presentable {
-    weak var listener: TabbarFirstPresentableListener? { get set }
+protocol ConnectAAAAPresentable: Presentable {
+    weak var listener: ConnectAAAAPresentableListener? { get set }
     // TODO: Declare methods the interactor can invoke the presenter to present data.
 }
 
-protocol TabbarFirstListener: class {
+protocol ConnectAAAAListener: class {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
 }
 
-final class TabbarFirstInteractor: PresentableInteractor<TabbarFirstPresentable>, TabbarFirstInteractable, TabbarFirstPresentableListener {
+final class ConnectAAAAInteractor: PresentableInteractor<ConnectAAAAPresentable>, ConnectAAAAInteractable, ConnectAAAAPresentableListener {
 
-    weak var router: TabbarFirstRouting?
-    weak var listener: TabbarFirstListener?
+    weak var router: ConnectAAAARouting?
+    weak var listener: ConnectAAAAListener?
 
     // TODO: Add additional dependencies to constructor. Do not perform any logic
     // in constructor.
-    override init(presenter: TabbarFirstPresentable) {
+    override init(presenter: ConnectAAAAPresentable) {
         super.init(presenter: presenter)
         presenter.listener = self
     }
@@ -43,11 +42,5 @@ final class TabbarFirstInteractor: PresentableInteractor<TabbarFirstPresentable>
     override func willResignActive() {
         super.willResignActive()
         // TODO: Pause any business logic.
-    }
-}
-
-extension TabbarFirstInteractor {
-    func didClickButton() {
-        self.router?.routingContect()
     }
 }

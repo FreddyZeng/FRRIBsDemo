@@ -28,20 +28,24 @@ final class ICXOximeterTabbarRouter: ViewableRouter<ICXOximeterTabbarInteractabl
     
     override func didLoad() {
         super.didLoad()
+    }
+    
+    func addBarItem() {
         let firstBuilder = TabbarFirstBuilder(dependency: TabbarFirstComponent())
         let secondBuilder = TabbarSecondBuilder(dependency: TabbarSecondComponent())
         let firstRouting = firstBuilder.build(withListener: self)
         let secondRouting = secondBuilder.build(withListener: self)
         attachChild(firstRouting)
         attachChild(secondRouting)
-        
         viewController.addTabbarViewControllers(viewControllers: [firstRouting.viewControllable.uiviewController,secondRouting.viewControllable.uiviewController])
     }
 }
 
 // MARK: TabbarFirstListener
 extension ICXOximeterTabbarRouter: TabbarFirstListener {
-    
+    func pushContect() {
+        
+    }
 }
 
 // MARK: TabbarSecondListener

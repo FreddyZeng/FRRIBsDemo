@@ -5,7 +5,10 @@ target 'ICXOximeter' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   pod 'RIBs'
-
+  pod 'SnapKit', '~> 4.0.0'
+  pod 'RxCocoa',    '~> 4.0'
+  pod 'PromiseKit', '~> 6.0'
+  # 'SwifterSwift', '4.3'
   # Pods for ICXOximeter
 
   target 'ICXOximeterTests' do

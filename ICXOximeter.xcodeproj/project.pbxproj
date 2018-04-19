@@ -30,6 +30,10 @@
 		C272E12D20887B90006C579C /* TabbarFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272E12920887B90006C579C /* TabbarFirstViewController.swift */; };
 		C272E12E20887B90006C579C /* TabbarFirstBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272E12A20887B90006C579C /* TabbarFirstBuilder.swift */; };
 		C272E12F20887B90006C579C /* TabbarFirstInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272E12B20887B90006C579C /* TabbarFirstInteractor.swift */; };
+		C272E13820889B10006C579C /* ConnectAAAARouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272E13420889B10006C579C /* ConnectAAAARouter.swift */; };
+		C272E13920889B10006C579C /* ConnectAAAAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272E13520889B10006C579C /* ConnectAAAAViewController.swift */; };
+		C272E13A20889B10006C579C /* ConnectAAAABuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272E13620889B10006C579C /* ConnectAAAABuilder.swift */; };
+		C272E13B20889B10006C579C /* ConnectAAAAInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272E13720889B10006C579C /* ConnectAAAAInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,10 @@
 		C272E12920887B90006C579C /* TabbarFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarFirstViewController.swift; sourceTree = "<group>"; };
 		C272E12A20887B90006C579C /* TabbarFirstBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarFirstBuilder.swift; sourceTree = "<group>"; };
 		C272E12B20887B90006C579C /* TabbarFirstInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarFirstInteractor.swift; sourceTree = "<group>"; };
+		C272E13420889B10006C579C /* ConnectAAAARouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectAAAARouter.swift; sourceTree = "<group>"; };
+		C272E13520889B10006C579C /* ConnectAAAAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectAAAAViewController.swift; sourceTree = "<group>"; };
+		C272E13620889B10006C579C /* ConnectAAAABuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectAAAABuilder.swift; sourceTree = "<group>"; };
+		C272E13720889B10006C579C /* ConnectAAAAInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectAAAAInteractor.swift; sourceTree = "<group>"; };
 		D590F1DEFB043AC5B10AC48E /* Pods-ICXOximeter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICXOximeter.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICXOximeter/Pods-ICXOximeter.release.xcconfig"; sourceTree = "<group>"; };
 		E4686A9136023289EB26AB58 /* Pods-ICXOximeterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICXOximeterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICXOximeterUITests/Pods-ICXOximeterUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,6 +171,7 @@
 		C272E0AD20884432006C579C /* ICXOximeter */ = {
 			isa = PBXGroup;
 			children = (
+				C272E13320889B02006C579C /* ConnectAAAA */,
 				C272E11D208877F0006C579C /* TabbarFirst */,
 				C272E11C208877F0006C579C /* TabbarSecond */,
 				C272E10A2088661E006C579C /* Tabbar */,
@@ -234,6 +243,17 @@
 				C272E12B20887B90006C579C /* TabbarFirstInteractor.swift */,
 			);
 			path = TabbarFirst;
+			sourceTree = "<group>";
+		};
+		C272E13320889B02006C579C /* ConnectAAAA */ = {
+			isa = PBXGroup;
+			children = (
+				C272E13420889B10006C579C /* ConnectAAAARouter.swift */,
+				C272E13520889B10006C579C /* ConnectAAAAViewController.swift */,
+				C272E13620889B10006C579C /* ConnectAAAABuilder.swift */,
+				C272E13720889B10006C579C /* ConnectAAAAInteractor.swift */,
+			);
+			path = ConnectAAAA;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,13 +413,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ICXOximeter/Pods-ICXOximeter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RIBs/RIBs.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RIBs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -452,6 +478,7 @@
 				C272E10920886194006C579C /* ICXOximeterRootInteractor.swift in Sources */,
 				C272E10620886194006C579C /* ICXOximeterRootRouter.swift in Sources */,
 				C272E1102088667D006C579C /* ICXOximeterTabbarViewController.swift in Sources */,
+				C272E13920889B10006C579C /* ConnectAAAAViewController.swift in Sources */,
 				C272E12C20887B90006C579C /* TabbarFirstRouter.swift in Sources */,
 				C272E10820886194006C579C /* ICXOximeterRootBuilder.swift in Sources */,
 				C272E10720886194006C579C /* ICXOximeterRootViewController.swift in Sources */,
@@ -460,12 +487,15 @@
 				C272E12D20887B90006C579C /* TabbarFirstViewController.swift in Sources */,
 				C272E12620887B81006C579C /* TabbarSecondBuilder.swift in Sources */,
 				C272E10F2088667D006C579C /* ICXOximeterTabbarRouter.swift in Sources */,
+				C272E13A20889B10006C579C /* ConnectAAAABuilder.swift in Sources */,
 				C272E1122088667D006C579C /* ICXOximeterTabbarInteractor.swift in Sources */,
 				C272E12720887B81006C579C /* TabbarSecondInteractor.swift in Sources */,
 				C272E12420887B81006C579C /* TabbarSecondRouter.swift in Sources */,
 				C272E12F20887B90006C579C /* TabbarFirstInteractor.swift in Sources */,
 				C272E12E20887B90006C579C /* TabbarFirstBuilder.swift in Sources */,
 				C272E0AF20884432006C579C /* AppDelegate.swift in Sources */,
+				C272E13B20889B10006C579C /* ConnectAAAAInteractor.swift in Sources */,
+				C272E13820889B10006C579C /* ConnectAAAARouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

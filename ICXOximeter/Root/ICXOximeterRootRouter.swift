@@ -26,13 +26,16 @@ final class ICXOximeterRootRouter: LaunchRouter<ICXOximeterRootInteractable, ICX
         interactor.router = self
     }
     
-    override func didLoad() {
-        super.didLoad()
+    func routToTabbar() {
         let tabbar = ICXOximeterTabbarBuilder.init(dependency: ICXOximeterTabbarComponent())
         let router:ViewableRouting = tabbar.build(withListener: self)
         attachChild(router)
         
         viewController.addViewController(viewController: router.viewControllable.uiviewController)
+    }
+    
+    override func didLoad() {
+        super.didLoad()
     }
 }
 

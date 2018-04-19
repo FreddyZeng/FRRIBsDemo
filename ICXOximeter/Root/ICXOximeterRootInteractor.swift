@@ -11,6 +11,7 @@ import RxSwift
 
 protocol ICXOximeterRootRouting: LaunchRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
+    func routToTabbar()
 }
 
 protocol ICXOximeterRootPresentable: Presentable {
@@ -37,6 +38,7 @@ final class ICXOximeterRootInteractor: PresentableInteractor<ICXOximeterRootPres
     override func didBecomeActive() {
         super.didBecomeActive()
         // TODO: Implement business logic here.
+        router?.routToTabbar()
     }
 
     override func willResignActive() {

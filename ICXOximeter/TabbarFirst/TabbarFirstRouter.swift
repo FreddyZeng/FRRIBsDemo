@@ -24,4 +24,11 @@ final class TabbarFirstRouter: ViewableRouter<TabbarFirstInteractable, TabbarFir
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }
+    
+    func routingContect() {
+        let builder = ConnectAAAABuilder(dependency: ConnectAAAAComponent())
+        let routing = builder.build(withListener: self as! ConnectAAAAListener)
+        attachChild(routing)
+        
+    }
 }
