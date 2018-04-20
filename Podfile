@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '8.0'
 
-target 'ICXOximeter' do
+target 'FRRIBsDemo' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   pod 'RIBs'
@@ -10,14 +10,14 @@ target 'ICXOximeter' do
   pod 'RxCocoa',    '~> 4.0'
   pod 'PromiseKit', '~> 6.0'
   # 'SwifterSwift', '4.3'
-  # Pods for ICXOximeter
+  # Pods for FRRIBsDemo
 
-  target 'ICXOximeterTests' do
+  target 'FRRIBsDemoTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'ICXOximeterUITests' do
+  target 'FRRIBsDemoUITests' do
     inherit! :search_paths
     # Pods for testing
   end
