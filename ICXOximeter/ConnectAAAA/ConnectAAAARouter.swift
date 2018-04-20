@@ -24,4 +24,18 @@ final class ConnectAAAARouter: ViewableRouter<ConnectAAAAInteractable, ConnectAA
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }
+    
+    func routingPushToBBBB() {
+        let builder = ConnectBBBBBuilder(dependency: ConnectBBBBComponent())
+        let routing = builder.build(withListener: self)
+        attachChild(routing)
+        viewControllable.uiviewController.navigationController?.pushViewController(routing.viewControllable.uiviewController, animated: true)
+    }
+}
+
+extension ConnectAAAARouter: ConnectBBBBListener {
+    func didFinish() {
+        detachChild(children.last!)
+        viewControllable.uiviewController.navigationController?.popViewController(animated: true)
+    }
 }

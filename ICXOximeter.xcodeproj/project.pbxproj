@@ -10,6 +10,11 @@
 		0204625418C6CA96BDF17CC2 /* Pods_ICXOximeterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4297EF7CD0A25E0EC505BB /* Pods_ICXOximeterTests.framework */; };
 		1E9D2DAAD3A9F7884AC5D6B5 /* Pods_ICXOximeterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134F89551713F667F8BE9E1E /* Pods_ICXOximeterUITests.framework */; };
 		91D16BE09DFB34343ABFF5B9 /* Pods_ICXOximeter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20574089D20780FD3EEDABE1 /* Pods_ICXOximeter.framework */; };
+		C228D07A2089B54600044875 /* ConnectBBBBRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C228D0762089B54600044875 /* ConnectBBBBRouter.swift */; };
+		C228D07B2089B54600044875 /* ConnectBBBBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C228D0772089B54600044875 /* ConnectBBBBViewController.swift */; };
+		C228D07C2089B54600044875 /* ConnectBBBBBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C228D0782089B54600044875 /* ConnectBBBBBuilder.swift */; };
+		C228D07D2089B54600044875 /* ConnectBBBBInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C228D0792089B54600044875 /* ConnectBBBBInteractor.swift */; };
+		C228D07F2089BD3B00044875 /* NSObject+Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = C228D07E2089BD3B00044875 /* NSObject+Class.swift */; };
 		C272E0AF20884432006C579C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272E0AE20884432006C579C /* AppDelegate.swift */; };
 		C272E0B620884432006C579C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C272E0B520884432006C579C /* Assets.xcassets */; };
 		C272E0C420884432006C579C /* ICXOximeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272E0C320884432006C579C /* ICXOximeterTests.swift */; };
@@ -61,6 +66,11 @@
 		7288B9579A2B7600B0517B8F /* Pods-ICXOximeterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICXOximeterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICXOximeterTests/Pods-ICXOximeterTests.release.xcconfig"; sourceTree = "<group>"; };
 		814091A982C594801CB751BA /* Pods-ICXOximeterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICXOximeterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICXOximeterUITests/Pods-ICXOximeterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		97028363CAAA8EE9FD1F32F4 /* Pods-ICXOximeterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICXOximeterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICXOximeterTests/Pods-ICXOximeterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C228D0762089B54600044875 /* ConnectBBBBRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectBBBBRouter.swift; sourceTree = "<group>"; };
+		C228D0772089B54600044875 /* ConnectBBBBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectBBBBViewController.swift; sourceTree = "<group>"; };
+		C228D0782089B54600044875 /* ConnectBBBBBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectBBBBBuilder.swift; sourceTree = "<group>"; };
+		C228D0792089B54600044875 /* ConnectBBBBInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectBBBBInteractor.swift; sourceTree = "<group>"; };
+		C228D07E2089BD3B00044875 /* NSObject+Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Class.swift"; sourceTree = "<group>"; };
 		C272E0AB20884432006C579C /* ICXOximeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICXOximeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C272E0AE20884432006C579C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C272E0B520884432006C579C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -146,6 +156,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C228D0752089B53800044875 /* ConnectBBBB */ = {
+			isa = PBXGroup;
+			children = (
+				C228D0762089B54600044875 /* ConnectBBBBRouter.swift */,
+				C228D0772089B54600044875 /* ConnectBBBBViewController.swift */,
+				C228D0782089B54600044875 /* ConnectBBBBBuilder.swift */,
+				C228D0792089B54600044875 /* ConnectBBBBInteractor.swift */,
+			);
+			path = ConnectBBBB;
+			sourceTree = "<group>";
+		};
 		C272E0A220884432006C579C = {
 			isa = PBXGroup;
 			children = (
@@ -171,12 +192,14 @@
 		C272E0AD20884432006C579C /* ICXOximeter */ = {
 			isa = PBXGroup;
 			children = (
+				C228D0752089B53800044875 /* ConnectBBBB */,
 				C272E13320889B02006C579C /* ConnectAAAA */,
 				C272E11D208877F0006C579C /* TabbarFirst */,
 				C272E11C208877F0006C579C /* TabbarSecond */,
 				C272E10A2088661E006C579C /* Tabbar */,
 				C272E0DC20884A4C006C579C /* Root */,
 				C272E0AE20884432006C579C /* AppDelegate.swift */,
+				C228D07E2089BD3B00044875 /* NSObject+Class.swift */,
 				C272E0B520884432006C579C /* Assets.xcassets */,
 				C272E0BA20884432006C579C /* Info.plist */,
 			);
@@ -479,6 +502,7 @@
 				C272E10620886194006C579C /* ICXOximeterRootRouter.swift in Sources */,
 				C272E1102088667D006C579C /* ICXOximeterTabbarViewController.swift in Sources */,
 				C272E13920889B10006C579C /* ConnectAAAAViewController.swift in Sources */,
+				C228D07C2089B54600044875 /* ConnectBBBBBuilder.swift in Sources */,
 				C272E12C20887B90006C579C /* TabbarFirstRouter.swift in Sources */,
 				C272E10820886194006C579C /* ICXOximeterRootBuilder.swift in Sources */,
 				C272E10720886194006C579C /* ICXOximeterRootViewController.swift in Sources */,
@@ -488,14 +512,18 @@
 				C272E12620887B81006C579C /* TabbarSecondBuilder.swift in Sources */,
 				C272E10F2088667D006C579C /* ICXOximeterTabbarRouter.swift in Sources */,
 				C272E13A20889B10006C579C /* ConnectAAAABuilder.swift in Sources */,
+				C228D07F2089BD3B00044875 /* NSObject+Class.swift in Sources */,
 				C272E1122088667D006C579C /* ICXOximeterTabbarInteractor.swift in Sources */,
 				C272E12720887B81006C579C /* TabbarSecondInteractor.swift in Sources */,
 				C272E12420887B81006C579C /* TabbarSecondRouter.swift in Sources */,
 				C272E12F20887B90006C579C /* TabbarFirstInteractor.swift in Sources */,
+				C228D07A2089B54600044875 /* ConnectBBBBRouter.swift in Sources */,
 				C272E12E20887B90006C579C /* TabbarFirstBuilder.swift in Sources */,
 				C272E0AF20884432006C579C /* AppDelegate.swift in Sources */,
 				C272E13B20889B10006C579C /* ConnectAAAAInteractor.swift in Sources */,
 				C272E13820889B10006C579C /* ConnectAAAARouter.swift in Sources */,
+				C228D07D2089B54600044875 /* ConnectBBBBInteractor.swift in Sources */,
+				C228D07B2089B54600044875 /* ConnectBBBBViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

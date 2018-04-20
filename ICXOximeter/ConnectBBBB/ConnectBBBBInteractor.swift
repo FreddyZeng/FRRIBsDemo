@@ -1,37 +1,40 @@
 //
-//  ConnectAAAAInteractor.swift
+//  ConnectBBBBInteractor.swift
 //  ICXOximeter
 //
-//  Created by fanrong on 2018/4/19.
+//  Created by fanrong on 2018/4/20.
 //  Copyright © 2018年 fanrong. All rights reserved.
 //
 
 import RIBs
 import RxSwift
 
-protocol ConnectAAAARouting: ViewableRouting {
+protocol ConnectBBBBRouting: ViewableRouting {
     // TODO: Declare methods the interactor can invoke to manage sub-tree via the router.
-    func routingPushToBBBB()
 }
 
-protocol ConnectAAAAPresentable: Presentable {
-    weak var listener: ConnectAAAAPresentableListener? { get set }
+protocol ConnectBBBBPresentable: Presentable {
+    weak var listener: ConnectBBBBPresentableListener? { get set }
     // TODO: Declare methods the interactor can invoke the presenter to present data.
 }
 
-protocol ConnectAAAAListener: class {
+protocol ConnectBBBBListener: class {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
     func didFinish()
 }
 
-final class ConnectAAAAInteractor: PresentableInteractor<ConnectAAAAPresentable>, ConnectAAAAInteractable, ConnectAAAAPresentableListener {
+final class ConnectBBBBInteractor: PresentableInteractor<ConnectBBBBPresentable>, ConnectBBBBInteractable, ConnectBBBBPresentableListener {
+    func didTouchBegan() {
+        listener?.didFinish()
+    }
+    
 
-    weak var router: ConnectAAAARouting?
-    weak var listener: ConnectAAAAListener?
+    weak var router: ConnectBBBBRouting?
+    weak var listener: ConnectBBBBListener?
 
     // TODO: Add additional dependencies to constructor. Do not perform any logic
     // in constructor.
-    override init(presenter: ConnectAAAAPresentable) {
+    override init(presenter: ConnectBBBBPresentable) {
         super.init(presenter: presenter)
         presenter.listener = self
     }
@@ -44,15 +47,5 @@ final class ConnectAAAAInteractor: PresentableInteractor<ConnectAAAAPresentable>
     override func willResignActive() {
         super.willResignActive()
         // TODO: Pause any business logic.
-    }
-}
-
-// MARK: ConnectAAAAPresentableListener
-extension ConnectAAAAInteractor {
-    func didTouchBegan() {
-        listener?.didFinish()
-    }
-    func didClickButton() {
-        router?.routingPushToBBBB()
     }
 }

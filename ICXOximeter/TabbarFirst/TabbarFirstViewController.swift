@@ -29,16 +29,21 @@ final class TabbarFirstViewController: UIViewController, TabbarFirstPresentable,
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.gray
-        let bt = UIButton.init(type: .infoDark)
+        let bt = UIButton.init(type: .custom)
+        bt.titleLabel?.textColor = UIColor.white
+        bt.setTitle("present一个控制器", for: UIControlState.normal)
+        bt.contentCompressionResistancePriority(for: .horizontal)
+        bt.contentCompressionResistancePriority(for: .vertical)
         bt.rx.tap.subscribe {[weak self] (event) in
             self?.listener?.didClickButton()
         }.disposed(by: disposeBag)
         bt.backgroundColor = UIColor.red
-        bt.titleLabel?.text = "abcd"
         view.addSubview(bt)
         bt.snp.makeConstraints { (maker) in
             maker.top.equalTo(80)
             maker.left.equalTo(60)
+//            maker.width.equalTo(120)
+//            maker.height.equalTo(60)
         }
     }
 }

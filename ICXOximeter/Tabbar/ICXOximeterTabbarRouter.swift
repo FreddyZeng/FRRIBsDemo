@@ -37,6 +37,8 @@ final class ICXOximeterTabbarRouter: ViewableRouter<ICXOximeterTabbarInteractabl
         let secondRouting = secondBuilder.build(withListener: self)
         attachChild(firstRouting)
         attachChild(secondRouting)
+        firstRouting.viewControllable.uiviewController.title = firstRouting.viewControllable.uiviewController.getClassName()
+        secondRouting.viewControllable.uiviewController.title = secondRouting.viewControllable.uiviewController.getClassName()
         viewController.addTabbarViewControllers(viewControllers: [firstRouting.viewControllable.uiviewController,secondRouting.viewControllable.uiviewController])
     }
 }

@@ -28,14 +28,20 @@ protocol ConnectAAAABuildable: Buildable {
 }
 
 final class ConnectAAAABuilder: Builder<ConnectAAAADependency>, ConnectAAAABuildable {
+    func build(withListener listener: ConnectAAAAListener) -> ConnectAAAARouting {
+        return build(withListener: listener, navigationController: nil)
+    }
 
     override init(dependency: ConnectAAAADependency) {
         super.init(dependency: dependency)
     }
 
-    func build(withListener listener: ConnectAAAAListener) -> ConnectAAAARouting {
+    func build(withListener listener: ConnectAAAAListener, navigationController:UINavigationController?) -> ConnectAAAARouting {
 //        let component = ConnectAAAAComponent()
         let viewController = ConnectAAAAViewController()
+        if let navigation = navigationController {
+            navigation.viewControllers = [viewController]
+        }
         let interactor = ConnectAAAAInteractor(presenter: viewController)
         interactor.listener = listener
         return ConnectAAAARouter(interactor: interactor, viewController: viewController)

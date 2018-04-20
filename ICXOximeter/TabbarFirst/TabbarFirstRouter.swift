@@ -27,8 +27,20 @@ final class TabbarFirstRouter: ViewableRouter<TabbarFirstInteractable, TabbarFir
     
     func routingContect() {
         let builder = ConnectAAAABuilder(dependency: ConnectAAAAComponent())
-        let routing = builder.build(withListener: self as! ConnectAAAAListener)
+        let nav = UINavigationController()
+        let routing = builder.build(withListener: self, navigationController: nav)
         attachChild(routing)
-        
+        viewController.uiviewController.present(nav, animated: true, completion: nil)
+    }
+}
+
+
+// MARK: ConnectAAAAListener
+extension TabbarFirstRouter: ConnectAAAAListener {
+    func didFinish() {
+        if let last = children.last as? ViewableRouting {
+            detachChild(last)
+            last.viewControllable.uiviewController.dismiss(animated: true, completion: nil)
+        }
     }
 }
