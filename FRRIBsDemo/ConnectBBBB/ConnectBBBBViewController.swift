@@ -27,6 +27,22 @@ final class ConnectBBBBViewController: UIViewController, ConnectBBBBPresentable,
         self.title = self.getClassName()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if let nav = navigationController {
+            print("WilltopVC: %@", nav.topViewController!)
+            print("WillBBB: %@", self)
+        }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        if let nav = navigationController {
+            print("DidtopVC: %@", nav.topViewController!)
+            print("DidBBB: %@", self)
+        }
+    }
+    
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         listener?.didTouchBegan()

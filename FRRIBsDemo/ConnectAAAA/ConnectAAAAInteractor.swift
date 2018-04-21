@@ -29,6 +29,10 @@ final class ConnectAAAAInteractor: PresentableInteractor<ConnectAAAAPresentable>
     weak var router: ConnectAAAARouting?
     weak var listener: ConnectAAAAListener?
 
+    deinit {
+        print("ConnectAAAAInteractor, 销毁了")
+    }
+    
     // TODO: Add additional dependencies to constructor. Do not perform any logic
     // in constructor.
     override init(presenter: ConnectAAAAPresentable) {

@@ -19,6 +19,10 @@ protocol ConnectAAAAViewControllable: ViewControllable {
 
 final class ConnectAAAARouter: ViewableRouter<ConnectAAAAInteractable, ConnectAAAAViewControllable>, ConnectAAAARouting {
 
+    deinit {
+        print("ConnectAAAARouter, 销毁了")
+    }
+    
     // TODO: Constructor inject child builder protocols to allow building children.
     override init(interactor: ConnectAAAAInteractable, viewController: ConnectAAAAViewControllable) {
         super.init(interactor: interactor, viewController: viewController)
@@ -31,6 +35,11 @@ final class ConnectAAAARouter: ViewableRouter<ConnectAAAAInteractable, ConnectAA
         attachChild(routing)
         viewControllable.uiviewController.navigationController?.pushViewController(routing.viewControllable.uiviewController, animated: true)
 
+    }
+    
+    override func didLoad() {
+        super.didLoad()
+        print("ConnectAAAARouter, 加载了")
     }
 }
 

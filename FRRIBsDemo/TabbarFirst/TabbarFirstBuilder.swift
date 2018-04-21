@@ -36,7 +36,6 @@ final class TabbarFirstBuilder: Builder<TabbarFirstDependency>, TabbarFirstBuild
     func build(withListener listener: TabbarFirstListener) -> TabbarFirstRouting {
 //        let component = TabbarFirstComponent(dependency: dependency)
         let viewController = TabbarFirstViewController()
-        let nav = UINavigationController(rootViewController: viewController)
         let interactor = TabbarFirstInteractor(presenter: viewController)
         interactor.listener = listener
         return TabbarFirstRouter(interactor: interactor, viewController: viewController)

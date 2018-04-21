@@ -25,9 +25,10 @@ final class TabbarFirstRouter: ViewableRouter<TabbarFirstInteractable, TabbarFir
         interactor.router = self
     }
     
+    let nav: UINavigationController = UINavigationController()
+    
     func routingContect() {
         let builder = ConnectAAAABuilder(dependency: ConnectAAAAComponent())
-        let nav = UINavigationController()
         let routing = builder.build(withListener: self, navigationController: nav)
         attachChild(routing)
 //        viewController.uiviewController.present(nav, animated: true, completion: nil)
@@ -43,7 +44,8 @@ extension TabbarFirstRouter: ConnectAAAAListener {
     func didFinish() {
         if let last = children.last as? ViewableRouting {
             detachChild(last)
-            last.viewControllable.uiviewController.dismiss(animated: true, completion: nil)
+            nav.dismiss(animated: true, completion: nil)
+            nav.viewControllers = [];
         }
     }
 }

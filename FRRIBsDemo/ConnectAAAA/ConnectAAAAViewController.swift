@@ -21,6 +21,10 @@ protocol ConnectAAAAPresentableListener: class {
 
 final class ConnectAAAAViewController: UIViewController, ConnectAAAAPresentable, ConnectAAAAViewControllable {
 
+    deinit {
+        print("ConnectAAAAViewController, 销毁了")
+    }
+    
     weak var listener: ConnectAAAAPresentableListener?
     
     let disposeBag = DisposeBag()
@@ -37,6 +41,7 @@ final class ConnectAAAAViewController: UIViewController, ConnectAAAAPresentable,
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("ConnectAAAAViewController, 创建了 %@", self)
         view.backgroundColor = UIColor.white
         view.addSubview(tipsButton)
         tipsButton.snp.makeConstraints { (maker) in
