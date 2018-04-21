@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, FRRIBsDemoRootListener {
         
         let root = FRRIBsDemoRootBuilder(dependency: FRRIBsDemoRootComponent())
         rootRouting = root.build(withListener: self)
-        rootRouting?.launchFromWindow(window)
+        rootRouting?.launch(from: window)
         return true
     }
 

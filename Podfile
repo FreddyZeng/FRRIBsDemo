@@ -4,7 +4,7 @@
 target 'FRRIBsDemo' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-  pod 'RIBs'
+  pod 'RIBs', :git => 'https://github.com/FreddyZeng/RIBs.git', :branch => 'feature/icx'
   pod 'SnapKit', '~> 4.0.0'
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
