@@ -30,7 +30,10 @@ final class TabbarFirstRouter: ViewableRouter<TabbarFirstInteractable, TabbarFir
         let nav = UINavigationController()
         let routing = builder.build(withListener: self, navigationController: nav)
         attachChild(routing)
-        viewController.uiviewController.present(nav, animated: true, completion: nil)
+//        viewController.uiviewController.present(nav, animated: true, completion: nil)
+        if let rootVC = viewControllable.uiviewController.view.window?.rootViewController {
+            rootVC.present(nav, animated: true, completion: nil)
+        }
     }
 }
 

@@ -37,7 +37,7 @@ final class ConnectAAAAViewController: UIViewController, ConnectAAAAPresentable,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor.white
         view.addSubview(tipsButton)
         tipsButton.snp.makeConstraints { (maker) in
             maker.top.equalTo(100)
@@ -48,6 +48,7 @@ final class ConnectAAAAViewController: UIViewController, ConnectAAAAPresentable,
         tipsButton.rx.tap.subscribe({[weak self] (event) in
             self?.listener?.didClickButton()
         }).disposed(by: disposeBag)
+        title = self.getClassName()
     }
     
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

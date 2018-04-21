@@ -26,10 +26,6 @@ final class FRRIBsDemoTabbarRouter: ViewableRouter<FRRIBsDemoTabbarInteractable,
         interactor.router = self
     }
     
-    override func didLoad() {
-        super.didLoad()
-    }
-    
     func addBarItem() {
         let firstBuilder = TabbarFirstBuilder(dependency: TabbarFirstComponent())
         let secondBuilder = TabbarSecondBuilder(dependency: TabbarSecondComponent())

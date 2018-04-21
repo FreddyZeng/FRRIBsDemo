@@ -33,10 +33,6 @@ final class FRRIBsDemoRootRouter: LaunchRouter<FRRIBsDemoRootInteractable, FRRIB
         
         viewController.addViewController(viewController: router.viewControllable.uiviewController)
     }
-    
-    override func didLoad() {
-        super.didLoad()
-    }
 }
 
 extension FRRIBsDemoRootRouter: FRRIBsDemoTabbarListener {

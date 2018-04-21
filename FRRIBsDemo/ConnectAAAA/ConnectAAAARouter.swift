@@ -30,6 +30,7 @@ final class ConnectAAAARouter: ViewableRouter<ConnectAAAAInteractable, ConnectAA
         let routing = builder.build(withListener: self)
         attachChild(routing)
         viewControllable.uiviewController.navigationController?.pushViewController(routing.viewControllable.uiviewController, animated: true)
+
     }
 }
 
